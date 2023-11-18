@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C4DE8C"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
+
+    <ImageButton
+        android:id="@+id/imbBackRe"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"></ImageButton>
+
+    <TextView
+        android:id="@+id/tvChaoMung1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_bold"
+        android:gravity="center"
+        android:text="Chào mừng bạn! "
+        android:textColor="@color/black"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/tvChaoMung2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/quicksand_regular"
+        android:text= "Tạo tài khoản để sử dụng những dịch vụ của VITIHOLA "
+        android:textColor="@color/black"
+        android:textSize="14dp" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imgic2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic2" />
+    <EditText
+        android:id="@+id/etUsernameRe"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/login_btn"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="4dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:hint="Tên đăng nhập"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:layout_gravity="center" >
+    </EditText>
+    <EditText
+        android:id="@+id/etEmailRe"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_btn"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:hint="Email"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:layout_gravity="center" >
+    </EditText>
+    <EditText
+        android:id="@+id/etPhoneRe"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_btn"
+        android:drawableLeft="@drawable/baseline_phone_24"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:hint="Số điện thoại"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:layout_gravity="center" >
+    </EditText>
+    <EditText
+        android:id="@+id/etPasswordRe"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_btn"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:layout_gravity="center" >
+    </EditText>
+    <EditText
+        android:id="@+id/et_confirm_passwordRe"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_btn"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:hint="Xác nhận mật khẩu"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:layout_gravity="center" >
+    </EditText>
+    <Button
+        android:id="@+id/btnRegisterRe"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_btn"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Đăng ký"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

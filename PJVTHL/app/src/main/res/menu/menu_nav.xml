@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_Home"
+        android:title="@string/nav_Home"
+        android:icon="@drawable/baseline_home_24" />
+
+        <item android:id="@+id/nav_Info"
+        android:title="@string/nav_Info"
+        android:icon="@drawable/baseline_person_24"/>
+
+        <item android:id="@+id/nav_ContactUs"
+        android:title="@string/nav_ContactUs"
+        android:icon="@drawable/baseline_chat_bubble_24"/>
+        <item android:id="@+id/nav_Order"
+        android:title="@string/nav_Order"
+        android:icon="@drawable/baseline_local_shipping_24"/>
+
+        <item android:id="@+id/nav_Logout"
+        android:title="@string/nav_Logout"
+        android:icon="@drawable/baseline_logout_24"/>
+
+        <item android:title="@string/space" />
+        <item android:title="@string/space" />
+        <item android:title="@string/space" />
+        <item android:title="@string/space" />
+        <item android:title="@string/space" />
+        <item android:title="@string/space" />
+
+
+         <item android:id="@+id/nav_Us"
+        android:title="@string/nav_Us"
+        android:icon="@drawable/baseline_local_police_24"/>
+ </group>
+
+</menu>

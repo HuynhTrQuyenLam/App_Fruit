@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProductDetailFragment"
+    android:orientation="vertical"
+    android:background="@color/xanh">
+
+    <ScrollView
+        android:layout_marginBottom="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/hinhsanpham"
+                android:layout_width="match_parent"
+                android:layout_height="390dp"
+                android:src="@drawable/cachua"
+                android:background="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+            <LinearLayout
+                android:id="@+id/ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hinhsanpham">
+
+                <TextView
+                    android:id="@+id/tensanpham"
+                    android:layout_width="361dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Cà chua"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/ibtraitim"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/timden"
+                    android:background="#C4DE8C"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    tools:ignore="NotSibling,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ten"
+                android:weightSum="2">
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ngoisao"/>
+                <TextView
+                    android:id="@+id/textviewsao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="4.9"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textviewgia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="23sp"
+                android:text="60.000đ"
+                android:textColor="#E73E3E"
+                android:textStyle="bold"
+                tools:ignore="NotSibling" />
+
+            <LinearLayout
+                android:id="@+id/line2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textviewgia"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kho: "
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="120kg"
+                    android:id="@+id/soluongkho"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_themgiohang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Thêm Vào Giỏ Hàng"
+                android:textSize="20sp"
+                android:padding="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line2"
+                android:textAllCaps="false"
+                android:background="@color/xanhnhat"
+                />
+            <View
+                android:id="@+id/kengang"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_themgiohang"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"/>
+            <LinearLayout
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/kengang">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Mô tả sản phẩm "
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/mota"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Cà chua trái cây Đà Lạt hay còn gọi là cà chua trứng sữa hoặc cà chua cherry vàng, có nguồn gốc từ Nhật Bản và được nhập khẩu về Đà Lạt trồng theo công nghệ hữu cơ nên tạo ra những quả cà cherry vàng có ngon ngọt tự nhiên và giòn giòn cực kỳ ngon miệng và hấp dẫn."
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sản phẩm liên quan"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvGoiY"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line3"/>
+
+            <TextView
+                android:id="@+id/tv_dgbl"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Đánh giá và bình luận"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rcvGoiY"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_dgbl"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <!-- User Rating -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp">
+
+                    <RatingBar
+                        android:id="@+id/user_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/user_rating">
+
+                        <EditText
+                            android:id="@+id/comment_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Viết bình luận..."/>
+
+                        <Button
+                            android:id="@+id/submit_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/comment_edittext"
+                            android:layout_alignParentEnd="true"
+                            android:text="Đăng"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!-- User Comments -->
+                <TextView
+                    android:id="@+id/comments_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="Bình luận"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1C1C1C"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/comments_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</LinearLayout>

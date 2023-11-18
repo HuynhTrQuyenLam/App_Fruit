@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.UsFragment"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Về Chúng tôi" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+
+        android:text="Muốn khỏe mạnh thì thực phẩm ăn mỗi ngày phải sạch, tươi ngon, rõ nguồn gốc, xuất xứ...
+
+Tại đây, sản phẩm Vitihola phục vụ đa dạng về rau, củ, quả tươi sống, thực phẩm khô... từ nông dân, cũng như chọn lựa các đơn vị uy tín..., nhằm phục vụ bữa cơm của mỗi gia đình việt."/>
+
+</FrameLayout>

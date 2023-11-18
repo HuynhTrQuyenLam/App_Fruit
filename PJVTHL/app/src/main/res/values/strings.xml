@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PJVTHL</string>
+
+    <string name="nav_Home">Trang chủ</string>
+    <string name="nav_Info">Thông tin</string>
+    <string name="nav_ContactUs">Liên hệ với chúng tôi</string>
+    <string name="nav_Order"> Đơn hàng</string>
+    <string name="nav_Logout">Đăng xuất</string>
+    <string name="nav_Us">Về chúng tôi</string>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="space" />
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Mo_ta">Cà chua là loại rau củ rất tốt cho sức khoẻ nhờ chứa nhiều dinh dưỡng đặc biệt là vitamin A, C, K ngoài ra loại quả này còn giúp làm đẹp da cho phái nữ rất tốt. Cà chua được trồng tại Lâm Đồng có thể ăn sống hoặc chế biến các món ăn cũng rất phù hợp.
+    </string>
+    <string name="Name">Cam Cam</string>
+    <string name="Phone">0123456789</string>
+    <string name="Address">828 Sư Vạn Hạnh, Phường 13, Quận 10, TP. Hồ Chí Minh</string>
+
+
+</resources>
